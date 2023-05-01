@@ -1,0 +1,33 @@
+<div>
+  <h1 class="title">Vivero El Otoño</h1>
+  <hr />
+  <div><img src="assets/plants.png" class="image-banner" /></div>
+</div>
+<table class="table w-75" style="margin-left: 5%">
+  <thead class="table-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nombre común</th>
+      <th scope="col">Tipo</th>
+      <th scope="col">Clima</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let planta of plantas">
+      <th>{{ planta.id }}</th>
+      <td>{{ planta.nombre_comun }}</td>
+      <td>{{ planta.tipo }}</td>
+      <td>{{ planta.clima }}</td>
+    </tr>
+  </tbody>
+</table>
+<div style="margin-left: 5%">
+  <p>Total plantas de interior: {{ totalPlantasInterior }}</p>
+  <p>Total plantas de exterior: {{ totalPlantasExterior }}</p>
+</div>
+
+<div class="row footer">
+  <div class="col-12">
+    Contact us: +57 3102105253 - info@elaromamagico.com - @elaromamagico
+  </div>
+</div>
